@@ -1,10 +1,13 @@
-import './Expenses.css'
+import React from 'react';
+
 import ExpenseItem from './ExpenseItem.js'
 import Card from '../UI/Card.js'
+import './Expenses.css'
+
 function Expenses(props) {
 
     return (
-            <Card>
+            <Card className="expenses">
                 <ExpenseItem
                     title={props.items[0].title}
                     amount={props.items[0].amount}
